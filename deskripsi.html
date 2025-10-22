@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>deskripsi</title>
+<link rel="stylesheet" href="deskripsi.css">
+</head>
+<body>
+     <!-- header -->
+	<div class="medsos">
+		<div class="container">
+			<ul>
+				<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+				<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+			</ul>
+		</div>
+	</div>
+   <header>
+		<div class="container">
+		<h1><a href="utama.html"></a>BIODATA ANGGOTA KELOMPOK</h1>
+		<ul>
+			<li><a href="utama.html">HOME</a></li>
+            <li class="active"><a href="deskripsi.html">BIODATA</a></li>
+		</ul>
+		</div>
+   </header>
+ <main>
+<div class="container">
+      <div class="brand">BIODATA ANGGOTA</div>
+<section class="grid" aria-label="Grid biodata anggota">
+  <article class="card">
+    <img tabindex="0" class="avatar" src="WhatsApp Image 2025-10-01 at 21.25.11.jpeg" alt="Foto Banyu" data-name="Banyu Arum" data-role="Anggota" data-ttl="Taman Baru, 23 November 2007" data-alamat="Jln pajajaran gang II no.41" data-umur="17 tahun" data-agama="Islam" data-hobi="Renang" data-nomor="082228175025" />
+    <div class="name">Banyu Arum</div>
+    <div class="role">Anggota</div>
+  </article>
+  <article class="card">
+    <img tabindex="0" class="avatar" src="WhatsApp Image 2025-10-01 at 21.25.06.jpeg" alt="Foto nurfuad" data-name=" Farras Nurfuad " data-role="Ketua" data-ttl="Bontang, 2 Juni 2007" data-alamat="Jl. Rejosari" data-umur="18 tahun" data-agama="Islam" data-hobi="Memelihara Hewan" data-nomor="082142639428" />
+    <div class="name">Farras Nurfuad</div>
+    <div class="role">Ketua</div>
+  </article>
+  <article class="card">
+    <img tabindex="0" class="avatar" src="WhatsApp Image 2025-10-01 at 19.41.22.jpeg" alt="Foto Sandhi" data-name="Rhesandhi Pramesta Putra" data-role="Anggota" data-ttl="Banyuwangi, 28 Oktober 2007" data-alamat="Asrama Polisi Penataban" data-umur="17 tahun" data-agama="Islam" data-hobi="Berlari" data-nomor="081217747210" />
+    <div class="name">Rhesandhi Pramesta Putra</div>
+    <div class="role">Anggota</div>
+  </article>
+  <article class="card">
+    <img tabindex="0" class="avatar" src="WhatsApp Image 2025-10-01 at 21.09.19.jpeg" alt="Foto Reco" data-name="Reconstantine" data-role="Anggota" data-ttl="Banyuwangi, 17 Juni 2008" data-alamat="Wongsorejo" data-umur="17 tahun" data-agama="Islam" data-hobi="Membaca Novel" data-nomor="082223031123" />
+    <div class="name">Reconstantine</div>
+    <div class="role">Anggota</div>
+  </article>
+  <article class="card">
+    <img tabindex="0" class="avatar" src="IMG_20251001_212003.jpg" alt="Foto Shefy" data-name="Shefy Alzena Belva" data-role="Membaca" data-ttl="Banyuwangi, 31 Mei 2008" data-alamat="Jl. Airlangga No. 33" data-umur="17 tahun" data-agama="Islam" data-hobi="Membaca" data-nomor="082247003646" />
+    <div class="name">Shefy Alzena Belva</div>
+    <div class="role">Anggota</div>
+  </article>
+  <article class="card">
+    <img tabindex="0" class="avatar" src="WhatsApp Image 2025-10-01 at 20.35.49.jpeg" alt="Foto Icha" data-name="Icha Nurul Aini" data-role="Anggota" data-ttl="Banyuwangi, 10 November 2008" data-alamat="Bakungan" data-umur="17 tahun" data-agama="Islam" data-hobi="Mendengarkan musik" data-nomor="083140151386" />
+    <div class="name">Icha Nurul Aini</div>
+    <div class="role">Anggota</div>
+  </article>
+</section>
+
+  </div>  <div class="modal-backdrop" id="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal" role="document">
+      <button class="modal-close" id="closeBtn" aria-label="Tutup">✕</button>
+      <div class="modal-header">
+        <img src="" alt="" class="modal-avatar" id="modalAvatar">
+        <div>
+          <h2 id="modalName">Nama</h2>
+          <div class="meta" id="modalRole">Peran</div>
+        </div>
+      </div>
+      <dl>
+        <dt>TTL</dt><dd id="modalTTL">-</dd>
+        <dt>Alamat</dt><dd id="modalAlamat">-</dd>
+        <dt>Umur</dt><dd id="modalUmur">-</dd>
+        <dt>Agama</dt><dd id="modalAgama">-</dd>
+        <dt>Hobi</dt><dd id="modalHobi">-</dd>
+        <dt>Nomor</dt><dd id="modalNomor">-</dd>
+      </dl>
+    </div>
+  </div>  <script>
+    const avatars = document.querySelectorAll('.avatar');
+    const modal = document.getElementById('modal');
+    const modalAvatar = document.getElementById('modalAvatar');
+    const modalName = document.getElementById('modalName');
+    const modalRole = document.getElementById('modalRole');
+    const modalTTL = document.getElementById('modalTTL');
+    const modalAlamat = document.getElementById('modalAlamat');
+    const modalUmur = document.getElementById('modalUmur');
+    const modalAgama = document.getElementById('modalAgama');
+    const modalHobi = document.getElementById('modalHobi');
+    const modalNomor = document.getElementById('modalNomor');
+    const closeBtn = document.getElementById('closeBtn');
+
+    function openModalFromTarget(target){
+      const {name, role, ttl, alamat, umur, agama, hobi, nomor} = target.dataset;
+      modalAvatar.src = target.src;
+      modalAvatar.alt = target.alt || name;
+      modalName.textContent = name || '-';
+      modalRole.textContent = role || '-';
+      modalTTL.textContent = ttl || '-';
+      modalAlamat.textContent = alamat || '-';
+      modalUmur.textContent = umur || '-';
+      modalAgama.textContent = agama || '-';
+      modalHobi.textContent = hobi || '-';
+      modalNomor.textContent = nomor || '-';
+      modal.style.display = 'flex';
+      modal.setAttribute('aria-hidden', 'false');
+      closeBtn.focus();
+    }
+
+    function closeModal(){
+      modal.style.display = 'none';
+      modal.setAttribute('aria-hidden', 'true');
+    }
+
+    avatars.forEach(a => {
+      a.addEventListener('click', e => openModalFromTarget(e.currentTarget));
+      a.addEventListener('keydown', e => {if(e.key === 'Enter' || e.key === ' '){e.preventDefault();openModalFromTarget(e.currentTarget);}});
+    });
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => {if(e.target === modal) closeModal();});
+    document.addEventListener('keydown', (e) => { if(e.key === 'Escape') closeModal(); });
+  </script>
+  </main>
+</section>
+
+  </body>
+</html>
